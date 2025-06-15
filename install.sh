@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cd /data/data/com.termux/files/home/razx/resources
+mv bashrc .bashrc
+mv systemBash .systemBash
+
 # <--Storage Setup-->
 clear
 echo -e "\e[32m[*] Setup Storage..."
