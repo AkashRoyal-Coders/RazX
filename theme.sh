@@ -28,7 +28,7 @@ else
 fi
 
 cd
-cd razx/resources/icon
+cd RazX/resources/icon
 tar -xf icon.tar.xz -C ~/.icons
 
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
@@ -36,7 +36,7 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
 echo -e "\e[35mIcon Theme Installed Successfully ✓"
 sleep 2
 cd
-cd razx/resources/cursor
+cd RazX/resources/cursor
 tar -xf cursor.tar.gz -C ~/.icons
 
 echo -e "\e[35mCursor Theme Installed Successfully ✓"
@@ -53,13 +53,13 @@ else
 fi
 
 cd
-cd razx/resources/wallpaper
+cd RazX/resources/wallpaper
 cp xfce-x.svg /data/data/com.termux/files/usr/share/backgrounds/xfce
 
 echo -e "\e[35mWallpaper Installed Successfully ✓"
 sleep 2
 cd
-cd razx/resorces/panel
+cd RazX/resorces/panel
 tar -czvf panel.tar.gz -C ~/ xfce4-panel-backup
 cp -r ~/xfce4-panel-backup/panel ~/.config/xfce4/
 cp -r ~/xfce4-panel-backup/xfconf ~/.config/xfce4/
@@ -69,10 +69,10 @@ systemBash_DIR="$HOME/.systemBash"
 
 if [ -d "$systemBash_DIR" ]; then
     rm -r /data/data/com.termux/files/home/.systemBash
-    cd /data/data/com.termux/files/home/razx/resources
+    cd /data/data/com.termux/files/home/RazX/resources
     cp -r .systemBash /data/data/com.termux/files/home/
 else
-    cd /data/data/com.termux/files/home/razx/resources
+    cd /data/data/com.termux/files/home/RazX/resources
     cp -r .systemBash /data/data/com.termux/files/home/
 fi
 
@@ -82,10 +82,10 @@ BashRc_DIR="$HOME/.bashrc"
 
 if [ -d "$BashRc_DIR" ]; then
     rm -r /data/data/com.termux/files/home/.bashrc
-    cd /data/data/com.termux/files/home/razx/resources
+    cd /data/data/com.termux/files/home/RazX/resources
     cp -r .bashrc /data/data/com.termux/files/home/
 else
-    cd /data/data/com.termux/files/home/razx/resources
+    cd /data/data/com.termux/files/home/RazX/resources
     cp -r .bashrc /data/data/com.termux/files/home/
 fi
 
