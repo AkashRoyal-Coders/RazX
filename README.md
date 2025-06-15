@@ -20,5 +20,5 @@ pkg install git -y
 
 ### Dowload RazX OS Installer In Termux
 ````bash
-git clone https://github.com/AkashRoyal-Coders/RazX.git && chmod +x RazX/* && ./RazX/install.sh
+git clone https://github.com/AkashRoyal-Coders/RazX.git && cd RazX && chmod +x * && ./install.sh
 ````
