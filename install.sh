@@ -1,8 +1,9 @@
 #!/bin/bash
 
-cd /data/data/com.termux/files/home/razx/resources
-mv bashrc .bashrc
-mv systemBash .systemBash
+
+mv /data/data/com.termux/files/home/RazX/resources/bashrc /data/data/com.termux/files/home/RazX/resources/.bashrc
+mv /data/data/com.termux/files/home/RazX/resources/systemBash /data/data/com.termux/files/home/RazX/resources/.systemBash
+
 
 # <--Storage Setup-->
 clear
