@@ -1,5 +1,6 @@
 #!/bin/bash
 
+termux-x11 :1 &
 export DISPLAY=:1
 xfce4-session &
 am start -n com.termux.x11/.MainActivity &
