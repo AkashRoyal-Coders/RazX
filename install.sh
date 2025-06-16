@@ -46,6 +46,8 @@ pkg install python -y
 clear
 pip install lolcat
 clear
+pkg install pyqt5 -y
+clear
 echo -e "\e[32m[✓] Packages Installed Successfully"
 sleep 2
 
