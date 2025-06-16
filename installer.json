@@ -1,0 +1,10 @@
+{
+  "theme": "true",
+  "icon": "true",
+  "cursor": "true",
+  "wallpaper": "true",
+  "dock": "true",
+  "systembash": "true",
+  "bashrc": "true",
+  "progress": 100
+}

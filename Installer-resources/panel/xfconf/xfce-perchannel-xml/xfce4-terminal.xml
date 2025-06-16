@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-terminal" version="1.0">
+  <property name="scrolling-bar" type="string" value="TERMINAL_SCROLLBAR_RIGHT"/>
+  <property name="misc-cursor-shape" type="string" value="TERMINAL_CURSOR_SHAPE_UNDERLINE"/>
+  <property name="overlay-scrolling" type="bool" value="true"/>
+  <property name="scrolling-on-output" type="bool" value="false"/>
+  <property name="use-default-working-dir" type="bool" value="false"/>
+  <property name="run-custom-command" type="bool" value="false"/>
+  <property name="command-login-shell" type="bool" value="false"/>
+  <property name="misc-show-unsafe-paste-dialog" type="bool" value="true"/>
+  <property name="scrolling-unlimited" type="bool" value="false"/>
+  <property name="misc-copy-on-select" type="bool" value="false"/>
+  <property name="text-blink-mode" type="string" value="TERMINAL_TEXT_BLINK_MODE_ALWAYS"/>
+  <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
+  <property name="background-darkness" type="double" value="0.90000000000000002"/>
+  <property name="scrolling-on-keystroke" type="bool" value="false"/>
+  <property name="scrolling-lines" type="uint" value="1000"/>
+  <property name="kinetic-scrolling" type="bool" value="false"/>
+  <property name="misc-slim-tabs" type="bool" value="false"/>
+  <property name="misc-maximize-default" type="bool" value="false"/>
+  <property name="misc-borders-default" type="bool" value="true"/>
+  <property name="misc-menubar-default" type="bool" value="true"/>
+  <property name="misc-toolbar-default" type="bool" value="false"/>
+  <property name="color-foreground" type="string" value="#55545554ffff"/>
+  <property name="color-background" type="string" value="#317e2fd72fd7"/>
+  <property name="font-use-system" type="bool" value="false"/>
+  <property name="font-name" type="string" value="Monospace Bold Italic 12"/>
+</channel>

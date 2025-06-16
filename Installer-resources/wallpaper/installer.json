@@ -1,0 +1,9 @@
+{
+  "theme": "false",
+  "icon": "false",
+  "cursor": "false",
+  "wallpaper": "true",
+  "dock": "false",
+  "systembash": "false",
+  "bashrc": "false"
+}
