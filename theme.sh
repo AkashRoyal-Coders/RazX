@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+mv /data/data/com.termux/files/home/RazX/Installer-resources/systemBash /data/data/com.termux/files/home/RazX/Installer-resources/.systemBash
+mv /data/data/com.termux/files/home/RazX/Installer-resources/bashrc /data/data/com.termux/files/home/RazX/Installer-resources/.bashrc
 # <--Installing Theme-->
 clear
 echo -e "\e[32m[*] Installing Theme..."
@@ -80,11 +81,9 @@ systemBash_DIR="$HOME/.systemBash"
 
 if [ -d "$systemBash_DIR" ]; then
     rm -r /data/data/com.termux/files/home/.systemBash
-    cd /data/data/com.termux/files/home/RazX/Installer-resources
-    cp -r .systemBash /data/data/com.termux/files/home/
+    cp -r /data/data/com.termux/files/home/RazX/Installer-resources/.systemBash /data/data/com.termux/files/home/
 else
-    cd /data/data/com.termux/files/home/RazX/Installer-resources
-    cp -r .systemBash /data/data/com.termux/files/home/
+    cp -r /data/data/com.termux/files/home/RazX/Installer-resources/.systemBash /data/data/com.termux/files/home/
 fi
 jq '.systembash = "true"' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
 jq '.progress = 84' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
@@ -96,11 +95,9 @@ BashRc_DIR="$HOME/.bashrc"
 
 if [ -d "$BashRc_DIR" ]; then
     rm -r /data/data/com.termux/files/home/.bashrc
-    cd /data/data/com.termux/files/home/RazX/Installer-resources
-    cp -r .bashrc /data/data/com.termux/files/home/
+    cp -r /data/data/com.termux/files/home/RazX/Installer-resources/.bashrc /data/data/com.termux/files/home/
 else
-    cd /data/data/com.termux/files/home/RazX/Installer-resources
-    cp -r .bashrc /data/data/com.termux/files/home/
+    cp -r /data/data/com.termux/files/home/RazX/Installer-resources/.bashrc /data/data/com.termux/files/home/
 fi
 jq '.bashrc = "true"' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
 jq '.progress = 100' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
