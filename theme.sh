@@ -69,6 +69,9 @@ jq '.progress = 56' /data/data/com.termux/files/home/RazX/installer.json > /data
 
 # <--Installing Panel-->
 sleep 2
+rm -r /data/data/com.termux/files/home/.config/xfce4/panel
+rm -r /data/data/com.termux/files/home/.config/xfce4/xfconf
+sleep 3
 cp -r /data/data/com.termux/files/home/RazX/Installer-resources/panel/panel /data/data/com.termux/files/home/.config/xfce4/
 cp -r /data/data/com.termux/files/home/RazX/Installer-resources/panel/xfconf /data/data/com.termux/files/home/.config/xfce4/
 xfce4-panel --restart
@@ -104,4 +107,7 @@ jq '.progress = 100' /data/data/com.termux/files/home/RazX/installer.json > /dat
 
 clear
 sleep 3
-pkill xfce4-session
+pkill -f xfce4
+pkill -f xfwm4
+pkill -f xfdesktop
+pkill -f xfce4-panel
