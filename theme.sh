@@ -52,16 +52,9 @@ jq '.progress = 42' /data/data/com.termux/files/home/RazX/installer.json > /data
 
 
 # <--Installing Wallpaper-->
-WALLPAPER_DIR="/data/data/com.termux/files/usr/share/backgrounds/xfce"
-
-if [ -d "$WALLPAPER_DIR" ]; then
-    rm -r /data/data/com.termux/files/usr/share/backgrounds/xfce
-    mkdir /data/data/com.termux/files/usr/share/backgrounds/xfce
-else
-    mkdir /data/data/com.termux/files/usr/share/backgrounds/xfce
-fi
-
 cd /data/data/com.termux/files/home/RazX/Installer-resources/wallpaper
+rm -r cp /data/data/com.termux/files/usr/share/backgrounds/xfce/xfce-x.svg
+sleep 3
 cp xfce-x.svg /data/data/com.termux/files/usr/share/backgrounds/xfce
 jq '.wallpaper = "true"' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
 jq '.progress = 56' /data/data/com.termux/files/home/RazX/installer.json > /data/data/com.termux/files/home/RazX/tmp.json && mv /data/data/com.termux/files/home/RazX/tmp.json /data/data/com.termux/files/home/RazX/installer.json
